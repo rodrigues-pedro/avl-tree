@@ -31,3 +31,5 @@ Após a execução desses comandos, podemos rodar a aplicação com o comando:
 ```
 streamlit run app.py
 ```
+
+**Alternativamente, essa aplicação pode ser acessada pelo link https://aed2-avl-tree.streamlit.app/**
