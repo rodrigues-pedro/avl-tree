@@ -34,10 +34,13 @@ class ABB_Tree:
         else:
             # se a árvore não for vazia:
             tmp = self.root
+            # iremos percorrer a árvore, partindo da raiz
             while True:
-                # iremos percorrer a árvore, partindo da raiz
+                # caso a chave já exista, levantaremos uma exceção
+                if node_key == tmp.key:
+                    raise Exception("Essa chave já existe. Tente com outra chave!")
                 # caso a chave seja menor que a chave do nó atual:
-                if node_key < tmp.key:
+                elif node_key < tmp.key:
                     # se não houver filho para a esquerda
                     if tmp.l_child is None:
                         # adiciona-se o novo nó à esquerda do nó atual
